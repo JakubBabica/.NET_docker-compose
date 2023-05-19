@@ -1,0 +1,9 @@
+﻿name: main
+
+on:
+  push:
+jobs:
+  gcr:
+    name: GCR
+    uses: cloudbuild.yaml
+    
