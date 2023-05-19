@@ -1,11 +1,11 @@
 ﻿steps:
   # Step 1: Build the Docker image for the 'app' service
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'eu.gcr.io/noted-palisade-385613/app', '.']
+    args: ['build', '-t', 'eu.gcr.io/noted-palisade-385613/docker-compose', '.']
 
   # Step 2: Push the Docker image to Google Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'eu.gcr.io/noted-palisade-385613/app']
+    args: ['push', 'eu.gcr.io/noted-palisade-385613/docker-compose']
 
   # Step 3: Deploy the services using Docker Compose
   - name: 'eu.gcr.io/cloud-builders/docker-compose'
