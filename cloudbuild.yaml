@@ -11,6 +11,7 @@
   - name: 'eu.gcr.io/cloud-builders/docker-compose'
     args: ['-f', 'docker-compose.yml', 'up', '-d']
 
+
 # Timeout and logs configuration (optional)
 timeout: '1200s'
 options:
